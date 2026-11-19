@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>喫茶こもれび（見本・架空のお店）｜はやとWeb</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;600&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#3a3330;--muted:#857a72;--line:#e6dfd8;--bg:#fbf9f6;--key:#6b4f3a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",sans-serif;font-size:15px;line-height:1.9;letter-spacing:.03em}
+  .bar{background:#333;color:#eee;font-size:12px;text-align:center;padding:7px 10px}
+  .bar a{color:#9fd3c7}
+  .wrap{max-width:760px;margin:0 auto}
+  .hero{position:relative}
+  .hero img{width:100%;height:min(70vw,460px);object-fit:cover;display:block}
+  .hero .t{position:absolute;left:0;right:0;bottom:0;padding:60px 22px 20px;background:linear-gradient(transparent,rgba(0,0,0,.55));color:#fff}
+  .hero h1{font-family:"Noto Serif JP",serif;font-weight:600;font-size:32px;margin:0;letter-spacing:.12em}
+  .hero p{margin:2px 0 0;font-size:13px;letter-spacing:.1em}
+  nav{display:flex;justify-content:center;gap:26px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14px}
+  nav a{color:var(--ink);text-decoration:none}
+  section{padding:38px 22px 6px}
+  h2{font-family:"Noto Serif JP",serif;font-weight:500;font-size:20px;letter-spacing:.15em;margin:0 0 16px;text-align:center}
+  h2 small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:11px;color:var(--muted);letter-spacing:.2em}
+  .intro p{margin:0;text-align:center}
+  .picks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .picks img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+  .picks b{display:block;font-weight:500;margin-top:6px}
+  .picks span{font-size:13px;color:var(--muted)}
+  .cat{font-size:13px;color:var(--muted);margin:16px 0 4px;letter-spacing:.1em}
+  table{width:100%;border-collapse:collapse}
+  td{padding:10px 4px;border-bottom:1px dotted #cfc5bb}
+  td.p{text-align:right;white-space:nowrap}
+  .info td:first-child{width:96px;color:var(--muted);font-size:14px}
+  .map{height:200px;background:#eee8e1;display:grid;place-items:center;color:var(--muted);font-size:13px;text-align:center}
+  .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+  .btns a{display:block;text-align:center;text-decoration:none;padding:11px;border:1px solid var(--key);color:var(--key)}
+  .btns a.tel{background:var(--key);color:#fff}
+  .small{font-size:12px;color:var(--muted);margin:8px 0 0}
+  footer{text-align:center;font-size:12px;color:var(--muted);padding:40px 16px}
+  @media (max-width:560px){ .picks{grid-template-columns:1fr 1fr} .picks div:last-child{grid-column:1 / -1} .picks div:last-child img{aspect-ratio:2/1} }
+</style>
+</head>
+<body>
+<div class="bar">これは「はやとWeb」が作った見本です（架空のお店。写真は無料の写真素材）　<a href="index.html">はやとWebに戻る</a></div>
+<div class="wrap">
+  <div class="hero">
+    <img src="cafe-room.jpg" alt="木の椅子と丸いテーブルが並ぶ店内">
+    <div class="t"><h1>喫茶こもれび</h1><p>COFFEE &amp; SWEETS</p></div>
+  </div>
+  <nav><a href="#menu">メニュー</a><a href="#time">営業時間</a><a href="#access">アクセス</a></nav>
+
+  <section class="intro">
+    <h2><small>ABOUT</small>お店のこと</h2>
+    <p>住宅街の角にある、小さな喫茶店です。<br>コーヒーは一杯ずつハンドドリップで。<br>おやつは毎朝、お店で手作りしています。</p>
+  </section>
+
+  <section>
+    <h2><small>RECOMMEND</small>おすすめ</h2>
+    <div class="picks">
+      <div><img src="cafe-drip.jpg" alt="ドリップでコーヒーを入れているところ"><b>こもれびブレンド</b><span>一杯ずつハンドドリップで</span></div>
+      <div><img src="cafe-jar.jpg" alt="瓶に入ったデザート"><b>瓶のミルクプリン</b><span>やさしい甘さの、なめらかなプリン</span></div>
+      <div><img src="cafe-tart.jpg" alt="ベリーののったタルト"><b>ベリーのタルト</b><span>その時いちばんおいしい果物で</span></div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2><small>MENU</small>メニュー</h2>
+    <div class="cat">ドリンク</div>
+    <table>
+      <tr><td>こもれびブレンド</td><td class="p">500円</td></tr>
+      <tr><td>カフェオレ</td><td class="p">550円</td></tr>
+      <tr><td>自家製レモネード</td><td class="p">550円</td></tr>
+    </table>
+    <div class="cat">おやつ</div>
+    <table>
+      <tr><td>瓶のミルクプリン</td><td class="p">450円</td></tr>
+      <tr><td>ベリーのタルト</td><td class="p">550円</td></tr>
+      <tr><td>おやつセット（ドリンク＋おやつ）</td><td class="p">900円</td></tr>
+    </table>
+  </section>
+
+  <section id="time">
+    <h2><small>OPEN</small>営業時間</h2>
+    <table class="info">
+      <tr><td>営業時間</td><td>10:00〜18:00（ラストオーダー 17:30）</td></tr>
+      <tr><td>定休日</td><td>水曜日・第3木曜日</td></tr>
+      <tr><td>席</td><td>10席</td></tr>
+      <tr><td>駐車場</td><td>2台</td></tr>
+    </table>
+  </section>
+
+  <section id="access">
+    <h2><small>ACCESS</small>アクセス</h2>
+    <div class="map">ここにGoogleマップが入ります<br>（見本のため住所は入れていません）</div>
+    <div class="btns"><a class="tel" href="#">電話する</a><a href="#">Instagram</a></div>
+    <p class="small">見本のため、ボタンは押しても動きません。実際のページでは、電話とInstagramにつながります。</p>
+  </section>
+
+  <footer>© 喫茶こもれび（見本・架空のお店）／ ページ作成：はやとWeb</footer>
+</div>
+</body>
+</html>
